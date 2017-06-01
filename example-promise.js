@@ -36,14 +36,14 @@ function addPromise(a, b) {
   });
 }
 
-addPromise(1, 3).then(function(result) {
-  console.log('Yaay the sum is ', result);
-}, function(err) {
-  console.log(err);
+addPromise(1, 3).then(function(value) {
+  console.log('Yaay the sum is ', value);
+}, function(reason) {
+  console.log(reason);
 });
 
-addPromise('derrick', 3).then(function(result) {
-  console.log('not expected');
-}, function(err) {
-  console.log(err);
+addPromise('derrick', 3).then(function(value) {
+  console.log('you shouldn\'t be seeing this');
+}, function(reason) {
+  console.log(reason);
 });
