@@ -1,1 +1,1 @@
-Hi! This is a weather application built with React!
+A weather application built with React.js
